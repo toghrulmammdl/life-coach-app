@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Life Coach Dashboard",
+    "subtitle": "Your personal space for tracking and improving your daily habits.",
+    "waterTrackerTitle": "💧 Water Tracker",
+    "waterTrackerDesc": "Monitor your daily water intake to stay hydrated and healthy.",
+    "trackNow": "Track Now →",
+    "comingSoonTitle": "Coming Soon...",
+    "comingSoonDesc": "More tools to help you achieve your goals are on the way!"
+  },
+  "waterTracker": {
+    "loading": "Loading...",
+    "error": "Error",
+    "fetchError": "There was a problem fetching data.",
+    "unknownError": "An unknown error occurred.",
+    "addError": "Could not add water.",
+    "deleteError": "Could not delete water log.",
+    "title": "Water Tracker Assistant",
+    "goal": "Today's Goal",
+    "liters": "Liters",
+    "save": "Save",
+    "cancel": "Cancel",
+    "quickAdd": "Quick Add",
+    "customAmountPlaceholder": "Custom amount (ml)",
+    "adding": "Adding...",
+    "add": "Add",
+    "weeklyStats": "Weekly Stats",
+    "hourlyIntake": "Today's Hourly Intake",
+    "weekly": "Weekly",
+    "daily": "Daily",
+    "intake": "Intake",
+    "waterDrunk": "Water Drunk",
+    "todaysLogs": "Today's Logs",
+    "noWaterToday": "You haven't drunk any water today.",
+    "hideHistory": "Hide History",
+    "showHistory": "Show Full History",
+    "noRecords": "No records found.",
+    "goHome": "← Go Home",
+    "streak": "Day Streak",
+    "goalReached": "Goal Reached!"
+  }
+}

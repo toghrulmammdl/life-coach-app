@@ -1,0 +1,42 @@
+{
+  "home": {
+    "title": "Həyat Məşqçisi Paneli",
+    "subtitle": "Gündəlik vərdişlərinizi izləmək və təkmilləşdirmək üçün şəxsi məkanınız.",
+    "waterTrackerTitle": "💧 Su İzləyici",
+    "waterTrackerDesc": "Hidratlı və sağlam qalmaq üçün gündəlik su qəbulunuza nəzarət edin.",
+    "trackNow": "İndi İzlə →",
+    "comingSoonTitle": "Tezliklə...",
+    "comingSoonDesc": "Məqsədlərinizə çatmağınıza kömək edəcək daha çox alət yoldadır!"
+  },
+  "waterTracker": {
+    "loading": "Yüklənir...",
+    "error": "Xəta",
+    "fetchError": "Məlumat alınarkən bir problem yarandı.",
+    "unknownError": "Naməlum bir xəta baş verdi.",
+    "addError": "Su əlavə edilə bilmədi.",
+    "deleteError": "Su qeydi silinə bilmədi.",
+    "title": "Su İzləmə Köməkçisi",
+    "goal": "Bugünkü Hədəf",
+    "liters": "Litr",
+    "save": "Yadda saxla",
+    "cancel": "Ləğv et",
+    "quickAdd": "Cəld Əlavə Et",
+    "customAmountPlaceholder": "Xüsusi miqdar (ml)",
+    "adding": "Əlavə edilir...",
+    "add": "Əlavə et",
+    "weeklyStats": "Həftəlik Statistika",
+    "hourlyIntake": "Bugünkü Saatlıq Qəbul",
+    "weekly": "Həftəlik",
+    "daily": "Gündəlik",
+    "intake": "Qəbul",
+    "waterDrunk": "İçilən Su",
+    "todaysLogs": "Bugünkü Qeydlər",
+    "noWaterToday": "Bu gün hələ su içməmisiniz.",
+    "hideHistory": "Tarixçəni Gizlət",
+    "showHistory": "Bütün Tarixçəni Göstər",
+    "noRecords": "Qeyd tapılmadı.",
+    "goHome": "← Ana Səhifə",
+    "streak": "Günlük Seriya",
+    "goalReached": "Hədəfə Çatdınız!"
+  }
+}
