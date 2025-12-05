@@ -1,0 +1,1051 @@
+/* Container and Layout */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 1800px; /* Added max-width */
+  margin: 0 auto; /* Center the container */
+  background: #f9fafb;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Added to push right content */
+  flex-wrap: wrap;
+  margin-right: 240px;
+}
+
+.topBarTitle {
+  font-size: 26px; /* Increased font size */
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.topBarNav {
+  display: flex;
+  gap: 8px;
+  margin-left: 32px; /* Added margin for spacing */
+}
+
+.topBarNavButton {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 15px; /* Increased font size */
+  font-weight: 500;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.topBarNavButton:hover {
+  background: #f3f4f6;
+}
+
+.topBarNavButtonActive {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.statsSeparator {
+  color: #d1d5db;
+}
+
+/* Buttons */
+.buttonPrimary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttonPrimary:hover {
+  background: #1f2937;
+}
+
+.buttonSecondary {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #374151;
+  transition: all 0.2s;
+}
+
+.buttonSecondary:hover {
+  background: #f9fafb;
+}
+
+/* Main Content */
+.mainContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+}
+
+.leftPanel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 36px; /* Increased padding */
+  min-width: 0;
+}
+
+.rightSidebar {
+  width: 450px;
+  background: white;
+  border-left: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Form Components */
+.formCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.formTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.inputField {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.inputField:focus {
+  border-color: #111827;
+}
+
+/* Kanban Board */
+.kanbanBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Geniş ekranlar için varsayılan 4 sütun */
+  gap: 24px;
+}
+
+.kanbanColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.kanbanHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.kanbanTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.kanbanCount {
+  font-size: 12px;
+  color: #9ca3af;
+  background: #f3f4f6;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.kanbanTasks {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Task Card */
+.taskCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px; /* Increased padding for a bigger feel */
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taskCard:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.taskTitle {
+  font-size: 17px; /* Increased font size */
+  font-weight: 600;
+  line-height: 1.4;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.taskDescription {
+  font-size: 15px; /* Increased font size */
+  color: #6b7280;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.taskProgress {
+  margin-top: 12px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.progressLabel {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.progressValue {
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progressBar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+
+.taskMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.metaBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* List View container */
+.listView {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card */
+.listCard {
+  display: grid;
+  grid-template-columns: 24px 1fr auto; /* Checkbox, Main Content, Meta */
+  grid-template-rows: auto auto; /* Top row for content, bottom row for progress */
+  column-gap: 16px;
+  row-gap: 8px;
+  align-items: start; /* Align items to the top of their grid area */
+  padding: 16px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: white;
+  transition: border 0.15s, box-shadow 0.15s, background 0.15s;
+  cursor: pointer;
+}
+
+.listCard:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.selectedCard {
+  border-color: #111827;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Checkbox */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px; /* Align better with title */
+}
+
+.checkboxDone {
+  background: #111827;
+  border-color: #111827;
+}
+
+/* Main content for list card */
+.listCardMainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-size: 14px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Progress Area */
+.progressWrapper {
+  grid-column: 1 / -1; /* Span all columns */
+  grid-row: 2; /* Place in the second row */
+  padding-top: 8px; /* Add some space from the content above */
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  border-radius: 999px; /* Use consistent border-radius */
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progressFill {
+  height: 100%;
+  background: #111827;
+  transition: width 0.25s ease;
+}
+
+/* Meta Section (right side) */
+.metaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.statusBadge {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.dueDate {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+}
+
+/* Priority (new) */
+.priority {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Tags (new) */
+.tagsContainer {
+  grid-column: 2 / 3; /* Place it under the main content */
+  grid-row: 2; /* Place it in the second row */
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tagBadge {
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.subtaskBadge {
+  background: #f9fafb;
+  color: #6b7280;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+/* Sidebar */
+.sidebarHeader {
+  padding: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.sidebarTitle {
+  font-size: 18px; /* Increased font size */
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  flex: 1;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.breadcrumbLink {
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+  color: #9ca3af;
+}
+
+.breadcrumbCurrent {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sidebarActions {
+  padding: 0 24px 16px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.iconButton {
+  padding: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.iconButton:hover {
+  background: #f3f4f6;
+}
+
+.sidebarContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px; /* Increased padding */
+}
+
+/* Sections */
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.statusButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.statusButton {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.detailsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Timer */
+.timerCard {
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.timerDisplay {
+  font-size: 42px; /* Increased font size */
+  font-weight: 600;
+  color: #111827;
+  font-family: monospace;
+  margin-bottom: 16px;
+}
+
+.timerControls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.timerButton {
+  width: 80px;
+  padding: 8px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.timerButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timerLabel {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Timer Edit Form */
+.editTimerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.timerEditControls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timerEditUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerEditUnit input {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.timerEditUnit input::-webkit-outer-spin-button,
+.timerEditUnit input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timerEditSeparator {
+  font-size: 36px; /* Slightly smaller than display but still prominent */
+  font-weight: 600;
+  color: #111827;
+  font-family: monospace;
+  margin: 0 4px;
+}
+
+.timerEditActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.checklistTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+
+/* Checklist */
+.checklistHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checklistProgress {
+  margin-bottom: 12px;
+}
+
+.checklistItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.checklistItem:hover {
+  background: #f3f4f6;
+}
+
+.checkButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.checklistText {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.checklistForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.addButton {
+  width: 100%;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 6px;
+  color: #6b7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.addButton:hover {
+  background: #f3f4f6;
+  border-color: #111827;
+  color: #111827;
+}
+
+/* Comments and Links */
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.listItem {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s;
+}
+
+.listItemHover:hover {
+  background: #f3f4f6;
+}
+
+.commentContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentText {
+  font-size: 14px;
+  color: #374151;
+  margin: 0 0 6px 0;
+  line-height: 1.5;
+}
+
+.commentFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.commentTime {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.linkItem:hover {
+  background: #f3f4f6;
+}
+
+.linkText {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.inputFlex {
+  flex: 1;
+}
+
+.sendButton {
+  padding: 8px 12px;
+  background: #111827;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background: #1f2937;
+}
+
+.deleteButton:hover {
+  color: #ef4444 !important;
+}
+
+/* Error Message */
+.errorMessage {
+  padding: 12px 16px;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  color: #991b1b;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Loading */
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  color: #9ca3af;
+}
+
+.spinAnimation {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1440px) {
+  .kanbanBoard {
+    grid-template-columns: repeat(3, 1fr); /* 1440px ve altı için 3 sütun */
+  }
+  .rightSidebar {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .rightSidebar {
+    width: 380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .kanbanBoard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .rightSidebar {
+    width: 340px;
+  }
+  
+  .leftPanel {
+    padding: 20px 24px;
+  }
+  
+  .topBar {
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    padding: 12px 16px;
+  }
+  
+  .topBarLeft {
+    gap: 16px;
+  }
+  
+  .topBarTitle {
+    font-size: 20px;
+  }
+  
+  .statsContainer {
+    display: none; /* Hide stats on mobile */
+  }
+  
+  .mainContent {
+    flex-direction: column;
+  }
+  
+  .leftPanel {
+    padding: 16px;
+  }
+  
+  .rightSidebar {
+    width: 100%;
+    height: 60vh;
+    border-left: none;
+    border-top: 1px solid #e5e7eb;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kanbanBoard {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .kanbanColumn {
+    min-height: auto;
+  }
+  
+  .kanbanTasks {
+    min-height: 150px;
+  }
+  
+  .formCard {
+    padding: 16px;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .topBarRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .buttonPrimary {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .timerDisplay {
+    font-size: 28px;
+  }
+  
+  .timerButton {
+    width: 70px;
+    font-size: 13px;
+  }
+  
+  .sidebarHeader,
+  .sidebarContent {
+    padding: 16px;
+  }
+}

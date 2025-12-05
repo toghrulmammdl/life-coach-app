@@ -1,0 +1,116 @@
+.homeContainer {
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.homeHeader {
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.headerControls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.controlButton {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.controlButton:hover {
+  background-color: var(--input-bg);
+  border-color: var(--primary-color);
+}
+
+.languageToggle {
+  font-weight: bold;
+}
+
+.homeHeader h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.homeHeader p {
+  font-size: 1.25rem;
+  color: var(--text-secondary-color);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--text-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.cardContent h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent p {
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cardCta {
+  font-weight: bold;
+  color: var(--primary-color);
+  align-self: flex-start;
+  display: inline-block;
+  position: relative;
+}
+
+.cardCta::after {
+  content: '→';
+  margin-left: 8px;
+  transition: margin-left 0.2s;
+}
+
+.featureCard:hover .cardCta::after {
+  margin-left: 14px;
+}

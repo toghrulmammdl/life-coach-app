@@ -5,8 +5,27 @@
     "waterTrackerTitle": "💧 Water Tracker",
     "waterTrackerDesc": "Monitor your daily water intake to stay hydrated and healthy.",
     "trackNow": "Track Now →",
+    "todoListTitle": "📝 Todo List",
+    "todoListDesc": "Organize your tasks, set priorities, and get things done efficiently.",
+    "organizeNow": "Organize Now",
     "comingSoonTitle": "Coming Soon...",
     "comingSoonDesc": "More tools to help you achieve your goals are on the way!"
+  },
+  "todo": {
+    "title": "My Todos",
+    "add": "Add Todo",
+    "loading": "Loading todos...",
+    "placeholders": {
+      "title": "e.g., Finish project report",
+      "description": "Add a short description (optional)"
+    },
+    "errors": {
+      "fetch": "Failed to fetch todos.",
+      "add": "Failed to add todo.",
+      "update": "Failed to update todo.",
+      "delete": "Failed to delete todo.",
+      "titleRequired": "Please enter a title for the todo."
+    }
   },
   "waterTracker": {
     "loading": "Loading...",

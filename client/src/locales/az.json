@@ -5,8 +5,27 @@
     "waterTrackerTitle": "💧 Su İzləyici",
     "waterTrackerDesc": "Hidratlı və sağlam qalmaq üçün gündəlik su qəbulunuza nəzarət edin.",
     "trackNow": "İndi İzlə →",
+    "todoListTitle": "📝 Tapşırıqlar Siyahısı",
+    "todoListDesc": "Tapşırıqlarınızı təşkil edin, prioritetləri müəyyənləşdirin və işləri səmərəli şəkildə həll edin.",
+    "organizeNow": "İndi Təşkil Et",
     "comingSoonTitle": "Tezliklə...",
     "comingSoonDesc": "Məqsədlərinizə çatmağınıza kömək edəcək daha çox alət yoldadır!"
+  },
+  "todo": {
+    "title": "Mənim Tapşırıqlarım",
+    "add": "Tapşırıq Əlavə Et",
+    "loading": "Tapşırıqlar yüklənir...",
+    "placeholders": {
+      "title": "məs., Layihə hesabatını bitir",
+      "description": "Qısa təsvir əlavə edin (istəyə bağlı)"
+    },
+    "errors": {
+      "fetch": "Tapşırıqları əldə etmək mümkün olmadı.",
+      "add": "Tapşırıq əlavə etmək mümkün olmadı.",
+      "update": "Tapşırığı yeniləmək mümkün olmadı.",
+      "delete": "Tapşırığı silmək mümkün olmadı.",
+      "titleRequired": "Zəhmət olmasa, tapşırıq üçün bir başlıq daxil edin."
+    }
   },
   "waterTracker": {
     "loading": "Yüklənir...",
